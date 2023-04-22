@@ -16,23 +16,23 @@ try:
 
      for i in range(number_to_add):
 
-            RiZoeL = Client(name="RiZoeL", api_id=ID, api_hash=HASH, in_memory=True)
+            Badnam = Client(name="Badnam", api_id=ID, api_hash=HASH, in_memory=True)
 
-            RiZoeL.start()
+            Badnam.start()
 
-            s = RiZoeL.export_session_string()
+            s = Badnam.export_session_string()
 
             sess = str(s)
 
             if whom:
 
-                id = RiZoeL.get_users(whom).id
+                id = Badnam.get_users(whom).id
 
-                RiZoeL.send_message(id, f"**Pyrogram String Session** \n\n `{sess}` \n\n © @itz_Badnam")
+                Badnam.send_message(id, f"**Pyrogram String Session** \n\n `{sess}` \n\n © @itz_Badnam")
 
             else:
 
-                RiZoeL.send_message("me", f"**Pyrogram String Session** \n\n `{sess}` \n\n © @Itz_Badnam")
+                Badnam.send_message("me", f"**Pyrogram String Session** \n\n `{sess}` \n\n © @Itz_Badnam")
 
        
 
